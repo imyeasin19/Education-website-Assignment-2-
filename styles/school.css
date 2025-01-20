@@ -33,7 +33,7 @@
 .btn-1{
     background-color: #FEA301;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     border: none;
     padding: 10px 50px;
@@ -43,7 +43,7 @@
 .btn-2{
     background-color: black;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
     border: none;
     padding: 10px 40px;
@@ -81,6 +81,18 @@
     display: none;
 }
 
+/* Banner Styles */
+.banner{
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-content{
+    max-width: 500px;
+}
+.banner-title{
+    font-size: 3rem;
+    font-weight: 700;
+}
 /* Responsive */
 @media screen and (max-width: 576px) {
     .navbar{
@@ -100,5 +112,13 @@
     .hamburger-icon{
         display: block;
     }
-
-}
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .banner-content{
+        justify-items: center;
+        text-align: center;
+    }
