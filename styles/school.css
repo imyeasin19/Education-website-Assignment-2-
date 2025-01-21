@@ -99,7 +99,9 @@
 }
 /* Main */
 main{
-
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 .bg-img{
     background-image: url(../assets/bg.png);
@@ -147,10 +149,29 @@ main{
 .division-container{
     display:flex;
     justify-content: space-between;
+    margin-bottom: 80px;
 
 }
 .division-container li{
     list-style: none
+}
+/* Round btn */
+.nav-btn{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+.btn-round{
+    background-color: #FEA301;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    font-weight: 600;
+    font-size: 1.8rem;
+    
 }
 
 /* Responsive */
@@ -166,7 +187,7 @@ main{
     .navbar>button{
         display: none;
     }
-    .h3{
+    .h3, .nav-btn{
         display: none;
     }
     .hamburger-icon{
