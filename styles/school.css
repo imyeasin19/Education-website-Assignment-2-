@@ -50,8 +50,12 @@
     border-radius: 12px;
 }
 
+
 .body{
     
+}
+.gap{
+    margin-top: 30px;
 }
 
   /* Navbar styles */
@@ -93,6 +97,62 @@
     font-size: 3rem;
     font-weight: 700;
 }
+/* Main */
+main{
+
+}
+.bg-img{
+    background-image: url(../assets/bg.png);
+}
+/* Curriculam Section */
+.curriculam{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.title{
+    text-align: center;
+}
+.section-title{
+    font-size: 2.6rem;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+.division{
+    width: 320px;
+    height: 450px;
+    border-radius: 18px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* box-shadow: 0 0 28px 0.94px #DEF5Ff inset;
+    background: white; */
+}
+.box-1{
+    border: 2px solid #DEF5FF;
+    background: linear-gradient(0deg, white, #DEF5FF);
+    padding: 30px;
+}
+.box-2{
+    border: 2px solid #FFF4DC;
+    background: linear-gradient(0deg, white, #FFF4DC);
+    padding: 30px;
+}
+.box-3{
+    border: 2px solid #F2E8FF;
+    background: linear-gradient(0deg, white, #F2E8FF);
+    padding: 30px;
+
+}
+.division-container{
+    display:flex;
+    justify-content: space-between;
+
+}
+.division-container li{
+    list-style: none
+}
+
 /* Responsive */
 @media screen and (max-width: 576px) {
     .navbar{
@@ -121,4 +181,16 @@
     .banner-content{
         justify-items: center;
         text-align: center;
+    }
+    .section-title{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .division-container{
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        height: 300px;
     }
