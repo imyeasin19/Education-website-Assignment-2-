@@ -103,6 +103,8 @@ main{
 }
 .bg-img{
     background-image: url(../assets/bg.png);
+    background-repeat: repeat-y;
+    mix-blend-mode: normal;
 }
 /* Curriculam Section */
 .curriculam{
@@ -177,7 +179,7 @@ main{
 }
 /* Stories Section */
 .stories{
-    
+
 }
 .stories-container{
     max-width: 1200px;
@@ -213,12 +215,20 @@ main{
     background-color: white;
     border-radius: 16px;
     justify-content: center;
+
 }
 .story>.content-section{
     padding: 35px;
+    
+}
+.story h3{
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 .short-story>.content-section{
-    padding: 25px;
+    padding: 20px;
+    font-size: 1rem ;
+    font-weight: 700;
 }
 .short-story img{
    width: 100%;
@@ -230,23 +240,71 @@ main{
 }
 
 .date{
-    /* position: absolute; */
-    /* bottom: 10px;
-    left: 10px; */
-    background-color: #00bcd4;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 12px;
+    display: inline-block;
+      background-color: #d9eeca;
+      color: gray;
+      font-size: 0.9rem;
+      padding: 9px 18px;
+      border-radius: 20px;
+      margin-top: -50px;
+      margin-bottom: -100px;
+      margin-left: 40px;
+      position: relative;
   }
+  .date-2{
+    display: inline-block;
+      background-color: #789DBC;
+      color: white;
+      font-size: 0.9rem;
+      padding: 9px 18px;
+      border-radius: 20px;
+      margin-top: -50px;
+      margin-bottom: -100px;
+      margin-left: 40px;
+      position: relative;
+  }
+  .date-3{
+    display: inline-block;
+      background-color: #5D58EF;
+      color: white;
+      font-size: 0.9rem;
+      padding: 9px 18px;
+      border-radius: 20px;
+      margin-top: -50px;
+      margin-bottom: -100px;
+      margin-left: 40px;
+      position: relative;
+  }
+  
   .view-btn{
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     max-width: 1200px;
     margin: 0 auto;
     align-items: center;
     text-align: center;
+    
   }
 
+/* Footer styles*/
+footer{
+    padding: 130px 230px;
+    gap: 120px;
+    background-color: #b5a486;
+    color: white;
+    justify-content: space-between;
+}
+.align{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 81px;
+    margin-bottom: 30px;
+}
+
+footer li{
+    list-style: none;
+    margin-bottom: 15px;
+}
 
 
 /* Responsive */
@@ -262,7 +320,7 @@ main{
     .navbar>button{
         display: none;
     }
-    .h3, .nav-btn{
+    .h3, .nav-btn, .story{
         display: none;
     }
     .hamburger-icon{
@@ -289,5 +347,21 @@ main{
         gap: 20px;
         align-items: center;
         height: auto;
+    }
+    .container{
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        padding: 0px;
+    }
+    .view-btn{
+        display: block;
+    }
+    footer{
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+    .align{
+        display: block;
     }
 }    
