@@ -63,6 +63,10 @@
     justify-content: space-between;
     align-items: center;
 }
+nav h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
 .navbar, .banner{
     max-width: 1200px;
     margin: 0 auto;
@@ -305,7 +309,9 @@ footer li{
     list-style: none;
     margin-bottom: 15px;
 }
-
+footer ul{
+    padding: 0px;
+}
 
 /* Responsive */
 @media screen and (max-width: 576px) {
@@ -361,7 +367,7 @@ footer li{
         padding: 20px;
         gap: 20px;
     }
-    .align{
-        display: block;
+    .footer-column ul{
+        padding: 0px;
     }
 }    
